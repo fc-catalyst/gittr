@@ -87,7 +87,7 @@
           loading="lazy"
           width="999"
           height="667"
-          src="/assets/images/blog/Depositphotos_175999666_S.jpg"
+          src="/images/blog/Depositphotos_175999666_S.jpg"
           alt="Eine Frau sitz auf einem Teppich mit einem Laptop auf dem Schoß"
           class="wp-image-68"
         />

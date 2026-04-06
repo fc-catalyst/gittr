@@ -95,7 +95,7 @@
           loading="lazy"
           width="1024"
           height="684"
-          src="/assets/images/blog/Depositphotos_326979804_L-1024x684.jpg"
+          src="/images/blog/Depositphotos_326979804_L-1024x684.jpg"
           alt="Mann am Laptop"
           class="wp-image-85"
         />

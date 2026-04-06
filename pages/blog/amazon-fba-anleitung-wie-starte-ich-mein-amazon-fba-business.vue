@@ -98,7 +98,7 @@
           loading="lazy"
           width="1024"
           height="684"
-          src="/assets/images/blog/Depositphotos_175998514_L-1-1024x684.jpg"
+          src="/images/blog/Depositphotos_175998514_L-1-1024x684.jpg"
           alt="Frau sitzt mit Laptop auf der Couch"
           class="wp-image-74"
         />

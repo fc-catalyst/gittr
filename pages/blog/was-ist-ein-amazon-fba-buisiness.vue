@@ -52,7 +52,7 @@
           loading="lazy"
           width="999"
           height="667"
-          src="/assets/images/blog/Depositphotos_208504732_S-1.jpg"
+          src="/images/blog/Depositphotos_208504732_S-1.jpg"
           alt="Mann sucht Produkte auf Amazon"
           class="wp-image-60"
         />

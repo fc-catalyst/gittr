@@ -98,7 +98,7 @@
           loading="lazy"
           width="1024"
           height="768"
-          src="/assets/images/blog/Depositphotos_445936138_L-1024x768.jpg"
+          src="/images/blog/Depositphotos_445936138_L-1024x768.jpg"
           alt="Lager mit vielen Amazon Paketen"
           class="wp-image-91"
         />

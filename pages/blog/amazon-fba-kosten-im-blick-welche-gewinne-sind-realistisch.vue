@@ -41,7 +41,7 @@
           loading="lazy"
           width="1024"
           height="684"
-          src="/assets/images/blog/Depositphotos_298077350_L-1024x684.jpg"
+          src="/images/blog/Depositphotos_298077350_L-1024x684.jpg"
           alt="Schreibtisch mit Laptop und Notizblock"
           class="wp-image-80"
         />
