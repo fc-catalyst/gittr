@@ -12,7 +12,7 @@
 
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
-      --clr-#{"" +$color}-#{$shade}: #{$value}; //--clr-purple-100 etc.
+      --clr-#{$color}-#{$shade}: #{$value}; //--clr-purple-100 etc.
     }
   }
   @each $screen-size, $font-size in $type-scale {
@@ -39,10 +39,10 @@
 
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
-      .text-#{"" +$color}-#{$shade} { //text-purple-100 etc.
+      .text-#{$color}-#{$shade} { //text-purple-100 etc.
         color: $value;
       }
-      .bg-#{"" +$color}-#{$shade} { //bg-purple-100 etc.
+      .bg-#{$color}-#{$shade} { //bg-purple-100 etc.
         color: $value;
       }   
     } 

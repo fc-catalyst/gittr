@@ -1,11 +1,3 @@
-import axios from 'axios';
-let dynamicRoutes = () => {
-  return axios
-    .get('http://content.gittr.com/wp-json/wp/v2/posts')
-    .then((res) => {
-      return res.data.map((post) => `/blog/${post.slug}`);
-    });
-};
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -80,8 +72,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   eslint: {
     fix: true
-  },
-  generate: {
-    routes: dynamicRoutes
   }
 };

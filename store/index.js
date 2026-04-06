@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { baseURL } from '~/helper/url';
+import postsData from '~/data/blog/posts.json';
+import categoriesData from '~/data/blog/categories.json';
 
 export const state = () => ({
   posts: [],
@@ -32,56 +32,11 @@ export const mutations = {
 };
 
 export const actions = {
-  async fetchPosts({ commit }) {
-    try {
-      let posts = await axios.get(`${baseURL}/posts`).then((res) => res.data);
-      posts = posts
-        .filter((el) => el.status === 'publish')
-        .map(
-          ({
-            id,
-            slug,
-            title,
-            excerpt,
-            date,
-            tags,
-            content,
-            categories,
-            yoast_head_json
-          }) => ({
-            id,
-            slug,
-            title,
-            excerpt,
-            date,
-            tags,
-            content,
-            categories,
-            icon: yoast_head_json.og_image
-              ? yoast_head_json.og_image[0]
-              : undefined
-          })
-        );
-      commit('SET_POSTS', posts);
-    } catch (err) {
-      console.log(err);
-    }
+  fetchPosts({ commit }) {
+    commit('SET_POSTS', postsData);
   },
-  async fetchCategories({ commit }) {
-    try {
-      let categories = await axios
-        .get(`${baseURL}/categories`)
-        .then((res) => res.data);
-      categories = categories
-        .filter((c) => c.id != 1)
-        .map(({ id, name }) => ({
-          id,
-          name
-        }));
-      commit('SET_CATEGORIES', categories);
-    } catch (err) {
-      console.log(err);
-    }
+  fetchCategories({ commit }) {
+    commit('SET_CATEGORIES', categoriesData);
   },
   saveResult({ commit }, result) {
     commit('SET_RESULT', result);
