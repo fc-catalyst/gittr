@@ -2,6 +2,9 @@
   "name": "fba-amazon-calculator",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=23.0.0"
+  },
   "scripts": {
     "dev": "NODE_ENV=dev nuxt",
     "copy:redirects": "cp '_redirects' 'dist'",
@@ -33,16 +36,13 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/svg": "^0.3.0",
-    "@vue/cli-plugin-eslint": "^4.5.15",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.20.0",
-    "fibers": "^5.0.0",
     "husky": "^6.0.0",
-    "node-sass": "^6.0.1",
     "prettier": "^2.4.1",
     "sass": "^1.45.0",
     "sass-loader": "10"
