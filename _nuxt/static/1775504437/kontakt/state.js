@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fgittr\u002F_nuxt\u002Fstatic\u002F1775504437",layout:"default",error:a,state:{posts:[],categories:[],result:{}},serverRendered:true,routePath:"\u002Fkontakt",config:{_app:{basePath:"\u002Fgittr\u002F",assetsPath:"\u002Fgittr\u002F_nuxt\u002F",cdnURL:a}}}}(null));
