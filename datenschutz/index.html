@@ -1,0 +1,468 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><title>fba-amazon-calculator</title><link data-n-head="ssr" rel="icon" type="image/png" href="/icon_small.png"><link rel="preload" href="/_nuxt/3a0c46c.js" as="script"><link rel="preload" href="/_nuxt/96f5207.js" as="script"><link rel="preload" href="/_nuxt/751f137.js" as="script"><link rel="preload" href="/_nuxt/5fe96f4.js" as="script"><link rel="preload" href="/_nuxt/39fb428.js" as="script"><style data-vue-ssr-id="2c6794ac:0 09a44d53:0 49569972:0 c3e36ca8:0 5780507f:0 8fff56de:0">:root{--clr-purple-100:#ad00ff;--clr-purple-200:#9300d0;--clr-purple-300:#7e34b5;--clr-orange-100:#ff912c;--clr-orange-200:#f06438;--clr-blue-100:#409fc7;--clr-white-100:#fff;--clr-white-200:#f1f1f1;--clr-white-300:hsla(0,0%,94.5%,.518);--clr-black-100:#000;--fs-200:0.6rem;--fs-300:0.8rem;--fs-400:1rem;--fs-500:1rem;--fs-600:1.25rem;--fs-700:1.25rem;--fs-800:1.5rem;--fs-900:1.875rem}@media only screen and (min-width:40em){:root{--fs-200:1rem;--fs-300:1rem;--fs-400:1.125rem;--fs-500:1.25rem;--fs-600:1.875rem;--fs-700:2.5rem;--fs-800:3.125rem;--fs-900:3.75rem}}:root{--fw-thin:300;--fw-regular:400;--fw-medium:500;--fw-bold:700;--fw-extra-bold:900;--lh-100:1.125rem;--lh-200:1.5rem;--lh-300:2.313rem;--lh-400:3.125rem}:root .bg-purple-100,:root .text-purple-100{color:#ad00ff}:root .bg-purple-200,:root .text-purple-200{color:#9300d0}:root .bg-purple-300,:root .text-purple-300{color:#7e34b5}:root .bg-orange-100,:root .text-orange-100{color:#ff912c}:root .bg-orange-200,:root .text-orange-200{color:#f06438}:root .bg-blue-100,:root .text-blue-100{color:#409fc7}:root .bg-white-100,:root .text-white-100{color:#fff}:root .bg-white-200,:root .text-white-200{color:#f1f1f1}:root .bg-white-300,:root .text-white-300{color:hsla(0,0%,94.5%,.518)}:root .bg-black-100,:root .text-black-100{color:#000}*,:after,:before{box-sizing:border-box}.nav,body,figure,h1,h2,h3,h4,h5,p,picture{margin:0}.nav,h1,h2,h3,h4,h5,h6,label,p{font-weight:400;font-weight:var(--fw-regular)}body{background-color:#ad00ff;background-color:var(--clr-purple-100);color:#000;color:var(--clr-black-100);font-family:"Avenir Next",sans-serif;font-size:1rem;font-size:var(--fs-500);line-height:1.5rem;line-height:var(--lh-200);min-height:100vh}h1{font-size:1.25rem;font-size:var(--fs-700);line-height:3.125rem;line-height:var(--lh-400)}h1,h2{font-family:Montserrat,sans-serif;font-weight:700;font-weight:var(--fw-bold);letter-spacing:.1em}h2{font-size:1.25rem;font-size:var(--fs-600);line-height:2.313rem;line-height:var(--lh-300)}.nav,h3{font-family:Montserrat,sans-serif;font-size:1rem;font-size:var(--fs-500);font-weight:700;font-weight:var(--fw-bold);letter-spacing:.1em;line-height:1.5rem;line-height:var(--lh-200)}img,picture{display:block;max-width:100%}button,input,select,textarea{font:inherit}input{background:0 0;border:none;color:#fff;color:var(--clr-white-100);cursor:pointer;display:inline;font-weight:300;font-weight:var(--fw-thin);letter-spacing:.1em}input::-moz-placeholder{color:hsla(0,0%,94.5%,.518);color:var(--clr-white-300);font-weight:300;font-weight:var(--fw-thin)}input::placeholder{color:hsla(0,0%,94.5%,.518);color:var(--clr-white-300);font-weight:300;font-weight:var(--fw-thin)}input:not([type=checkbox]):focus-visible{-webkit-appearance:none;outline:0!important}input:not([type=checkbox]):focus{-webkit-appearance:none;outline:0!important}ol,ul{list-style:none}a,a:active,a:focus,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none}button,input[type=reset],input[type=submit]{background:0 0;border:2px solid #fff;border-radius:100px;color:inherit;cursor:pointer;font-size:.8rem;font-size:var(--fs-300);height:2.688em;letter-spacing:.1em;line-height:var(--lh-10);outline:inherit;padding:0;transition:.3s;width:11em}@media(prefers-reduced-motion:reduce){*,:after,:before{animation-duration:NaNs!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:NaNs!important}}.nav,.uppercase,button,h1,input[type=reset],input[type=submit]{text-transform:uppercase}.blog-text{font-family:"Avenir Next",sans-serif;font-size:.8rem;font-size:var(--fs-300);letter-spacing:.1em;line-height:1.5rem;line-height:var(--lh-200)}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:url(/_nuxt/fonts/Montserrat-normal-300-cyrillic-ext.c141fb8.woff2) format("woff2");unicode-range:u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:url(/_nuxt/fonts/Montserrat-normal-300-cyrillic.6fd02dd.woff2) format("woff2");unicode-range:u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:url(/_nuxt/fonts/Montserrat-normal-300-vietnamese.56cdd76.woff2) format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:url(/_nuxt/fonts/Montserrat-normal-300-latin-ext.d16dfe2.woff2) format("woff2");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:url(/_nuxt/fonts/Montserrat-normal-300-latin.311d352.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:url(/_nuxt/fonts/Montserrat-normal-400-cyrillic-ext.c141fb8.woff2) format("woff2");unicode-range:u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:url(/_nuxt/fonts/Montserrat-normal-400-cyrillic.6fd02dd.woff2) format("woff2");unicode-range:u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:url(/_nuxt/fonts/Montserrat-normal-400-vietnamese.56cdd76.woff2) format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:url(/_nuxt/fonts/Montserrat-normal-400-latin-ext.d16dfe2.woff2) format("woff2");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:url(/_nuxt/fonts/Montserrat-normal-400-latin.311d352.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(/_nuxt/fonts/Montserrat-normal-500-cyrillic-ext.c141fb8.woff2) format("woff2");unicode-range:u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(/_nuxt/fonts/Montserrat-normal-500-cyrillic.6fd02dd.woff2) format("woff2");unicode-range:u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(/_nuxt/fonts/Montserrat-normal-500-vietnamese.56cdd76.woff2) format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(/_nuxt/fonts/Montserrat-normal-500-latin-ext.d16dfe2.woff2) format("woff2");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(/_nuxt/fonts/Montserrat-normal-500-latin.311d352.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:url(/_nuxt/fonts/Montserrat-normal-700-cyrillic-ext.c141fb8.woff2) format("woff2");unicode-range:u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:url(/_nuxt/fonts/Montserrat-normal-700-cyrillic.6fd02dd.woff2) format("woff2");unicode-range:u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:url(/_nuxt/fonts/Montserrat-normal-700-vietnamese.56cdd76.woff2) format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:url(/_nuxt/fonts/Montserrat-normal-700-latin-ext.d16dfe2.woff2) format("woff2");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:url(/_nuxt/fonts/Montserrat-normal-700-latin.311d352.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/_nuxt/fonts/Montserrat-normal-900-cyrillic-ext.c141fb8.woff2) format("woff2");unicode-range:u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/_nuxt/fonts/Montserrat-normal-900-cyrillic.6fd02dd.woff2) format("woff2");unicode-range:u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/_nuxt/fonts/Montserrat-normal-900-vietnamese.56cdd76.woff2) format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/_nuxt/fonts/Montserrat-normal-900-latin-ext.d16dfe2.woff2) format("woff2");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/_nuxt/fonts/Montserrat-normal-900-latin.311d352.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}.nuxt-progress{background-color:#000;height:2px;left:0;opacity:1;position:fixed;right:0;top:0;transition:width .1s,opacity .4s;width:0;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.fade-enter-active[data-v-62d61fd6],.fade-leave-active[data-v-62d61fd6]{transition:opacity .3s ease}.fade-enter[data-v-62d61fd6],.fade-leave-to[data-v-62d61fd6]{opacity:0}.nav[data-v-62d61fd6]{top:15px;width:100vw}.logo[data-v-62d61fd6],.nav[data-v-62d61fd6]{position:absolute}.logo[data-v-62d61fd6]{display:inline-block;left:2em;top:.5em;width:100px;z-index:1}.nav-desktop .wrapper[data-v-62d61fd6]{display:inline;position:relative}.nav-desktop .wrapper[data-v-62d61fd6]:not(:last-of-type){margin-right:.8em}.nav-desktop a[data-v-62d61fd6]{display:inline-block;position:relative}.nav-desktop a[data-v-62d61fd6]:after{background-color:#fff;bottom:0;content:"";height:2px;left:0;position:absolute;right:0;transform:scaleX(0)}.nav-desktop a[data-v-62d61fd6]:after,.nav-desktop a[data-v-62d61fd6]:before{transition:transform .3s ease-in-out}.nav-desktop a.purple[data-v-62d61fd6]:after{background-color:var(--clr-purple-100)}.nav-desktop a.orange[data-v-62d61fd6]:after{background-color:var(--clr-orange-100)}.nav-desktop a.white[data-v-62d61fd6]:after{background-color:var(--clr-white-100)}.nav-desktop a[data-v-62d61fd6]:hover:after{transform:scaleX(1)}.nav-desktop[data-v-62d61fd6]{right:2em}.nav-desktop[data-v-62d61fd6],.nav-mobile[data-v-62d61fd6]{font-size:var(--fs-400);text-align:right}@media(max-width:55em){.nav-desktop[data-v-62d61fd6],.nav-mobile[data-v-62d61fd6]{display:none}}.nav-mobile[data-v-62d61fd6]{display:none}.nav-mobile .logo[data-v-62d61fd6]{left:1em}@media(max-width:55em){.nav-mobile[data-v-62d61fd6]{display:block}body[data-v-62d61fd6]{overflow:hidden}}button[data-v-62d61fd6]{border:none;margin:0;padding:0;width:auto}button img[data-v-62d61fd6]{display:inline}.burger[data-v-62d61fd6]{margin-right:2em;padding:0 10px;text-align:right}.mobile-navigation-container[data-v-62d61fd6]{background-color:var(--clr-purple-100);bottom:0;left:0;overflow:hidden;position:fixed;right:0;top:0;z-index:600}.mobile-navigation-container .close[data-v-62d61fd6]{margin-right:2em;position:relative;text-align:right;z-index:1}.mobile-navigation-container .close .close-btn[data-v-62d61fd6]{color:#fff;font-size:40px;padding:0 10px;text-align:right}.mobile-navigation-container .links[data-v-62d61fd6]{align-items:center;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;top:0;width:100%}.mobile-navigation-container .links .link[data-v-62d61fd6]{color:#fff!important;font-size:25px;margin:0 .8rem 2.5rem;text-align:center;-webkit-text-decoration:none;text-decoration:none}h1[data-v-09213290],h2[data-v-09213290],h3[data-v-09213290],h4[data-v-09213290],h5[data-v-09213290]{padding:2rem 0}ol[data-v-09213290],ul[data-v-09213290]{list-style:inherit}a[data-v-09213290]{color:#00f;-webkit-text-decoration:underline;text-decoration:underline}.heading-container[data-v-09213290]{align-items:center;display:flex;flex-direction:row}.heading-container .bg-top[data-v-09213290]{background-image:url(/_nuxt/32b317583674bb65d19842ddac9cdc78.svg);background-position:bottom;background-repeat:no-repeat;background-size:cover;min-height:350px;width:100%;z-index:-100}@media(min-width:30em){.heading-container .bg-top[data-v-09213290]{min-height:450px}}@media(min-width:87.5em){.heading-container .bg-top[data-v-09213290]{min-height:500px}}@media(min-width:131em){.heading-container .bg-top[data-v-09213290]{min-height:600px}}.heading-container .heading h1[data-v-09213290]{color:var(--clr-white-100);font-size:2.5rem;font-weight:var(--fw-bold);letter-spacing:.1em;padding-left:7rem;position:absolute;top:12rem}@media(max-width:55em){.heading-container .heading h1[data-v-09213290]{padding-left:3rem}}.content[data-v-09213290]{font-size:var(--fs-400);letter-spacing:.07em;margin:5rem auto 0;max-width:70vw}@media(max-width:55em){.content[data-v-09213290]{margin-top:3rem;max-width:85vw}}.footer-block[data-v-09213290]{display:flex;flex-direction:row;height:100%;justify-content:center}.footer-block .text[data-v-09213290]{background-image:url(/_nuxt/01c1e725975e97750f91648a3d9342b7.svg);background-position:top;background-repeat:no-repeat;background-size:cover;padding-top:13rem;width:100%}.footer[data-v-cd3b42f6]{color:var(--clr-white-100);font-family:Montserrat,sans-serif;opacity:.7;text-align:center}.footer .uppercase[data-v-cd3b42f6]{display:flex;font-weight:var(--fw-thin)!important;justify-content:center;padding:0}@media(max-width:55em){.footer .uppercase[data-v-cd3b42f6]{flex-direction:column}}.footer ul[data-v-cd3b42f6]{list-style:none}.footer li[data-v-cd3b42f6]{margin:0 2.5rem}.footer li[data-v-cd3b42f6] a{color:inherit;-webkit-text-decoration:none;text-decoration:none}.footer li[data-v-cd3b42f6]:after{color:transparent;content:attr(name);display:block;height:1px;overflow:hidden;visibility:hidden}.footer li[data-v-cd3b42f6]:after,.footer li[data-v-cd3b42f6]:hover{font-weight:var(--fw-medium)}@media(max-width:55em){.footer li[data-v-cd3b42f6]{margin-top:1rem}}.footer p[data-v-cd3b42f6]{padding:2.5rem 0}@media(max-width:55em){.footer p[data-v-cd3b42f6]{padding:1rem 0}}</style><link rel="preload" href="/_nuxt/static/1775500892/datenschutz/state.js" as="script"><link rel="preload" href="/_nuxt/static/1775500892/datenschutz/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1775500892/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div class="nav" data-v-62d61fd6><div class="logo" data-v-62d61fd6><a href="/" data-v-62d61fd6><img src="/_nuxt/4e38a3c7544bef50b8f73117bb044590.svg" data-v-62d61fd6></a></div> <div class="nav nav-desktop" data-v-62d61fd6><div class="wrapper" data-v-62d61fd6><a href="/" class="link nuxt-link-active" data-v-62d61fd6>Amazon FBA Rechner</a></div> <div class="wrapper" data-v-62d61fd6><a href="/blog" class="link" data-v-62d61fd6>Blog</a></div></div> <div class="nav nav-mobile" data-v-62d61fd6><button class="burger" data-v-62d61fd6><img src="/_nuxt/dca1aabf396e5ccfdc68712f4c6fed8b.svg" data-v-62d61fd6></button></div> <!----></div> <div data-v-09213290><div class="heading-container" data-v-09213290><div class="bg-top" data-v-09213290><div class="heading" data-v-09213290><h1 data-v-09213290>Datenschutz</h1></div></div></div> <div class="content" data-v-09213290><h1 data-v-09213290>Datenschutz­erklärung</h1> <h2 data-v-09213290>1. Datenschutz auf einen Blick</h2> <h3 data-v-09213290>Allgemeine Hinweise</h3> <p data-v-09213290>
+      Die folgenden Hinweise geben einen einfachen Überblick
+      darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie
+      diese Website besuchen. Personenbezogene Daten sind alle Daten, mit
+      denen Sie persönlich identifiziert werden können.
+      Ausführliche Informationen zum Thema Datenschutz entnehmen Sie
+      unserer unter diesem Text aufgeführten Datenschutzerklärung.
+    </p> <h3 data-v-09213290>Datenerfassung auf dieser Website</h3> <h4 data-v-09213290>
+      Wer ist verantwortlich für die Datenerfassung auf dieser Website?
+    </h4> <p data-v-09213290>
+      Die Datenverarbeitung auf dieser Website erfolgt durch den
+      Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt
+      „Hinweis zur Verantwortlichen Stelle“ in dieser
+      Datenschutzerklärung entnehmen.
+    </p> <h4 data-v-09213290>Wie erfassen wir Ihre Daten?</h4> <p data-v-09213290>
+      Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
+      mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in
+      ein Kontaktformular eingeben.
+    </p> <p data-v-09213290>
+      Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch
+      der Website durch unsere IT-Systeme erfasst. Das sind vor allem
+      technische Daten (z. B. Internetbrowser, Betriebssystem oder
+      Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
+      automatisch, sobald Sie diese Website betreten.
+    </p> <h4 data-v-09213290>Wofür nutzen wir Ihre Daten?</h4> <p data-v-09213290>
+      Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der
+      Website zu gewährleisten. Andere Daten können zur Analyse
+      Ihres Nutzerverhaltens verwendet werden.
+    </p> <h4 data-v-09213290>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4> <p data-v-09213290>
+      Sie haben jederzeit das Recht, unentgeltlich Auskunft über
+      Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen
+      Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung
+      oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung
+      zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung
+      jederzeit für die Zukunft widerrufen. Außerdem haben Sie das
+      Recht, unter bestimmten Umständen die Einschränkung der
+      Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren
+      steht Ihnen ein Beschwerderecht bei der zuständigen
+      Aufsichtsbehörde zu.
+    </p> <p data-v-09213290>
+      Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie
+      sich jederzeit an uns wenden.
+    </p> <h3 data-v-09213290>Analyse-Tools und Tools von Dritt­anbietern</h3> <p data-v-09213290>
+      Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch
+      ausgewertet werden. Das geschieht vor allem mit sogenannten
+      Analyseprogrammen.
+    </p> <p data-v-09213290>
+      Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der
+      folgenden Datenschutzerklärung.
+    </p> <h2 data-v-09213290>2. Hosting</h2> <h3 data-v-09213290>RAIDBOXES</h3> <p data-v-09213290>
+      Wir hosten unsere Website bei RAIDBOXES. Anbieter ist die RAIDBOXES
+      GmbH, Hafenstr. 32, 48151 Münster (nachfolgend RAIDBOXES) Wenn Sie
+      unsere Website besuchen, erfasst RAIDBOXES verschiedene Logfiles
+      inklusive Ihrer IP-Adressen.
+    </p> <p data-v-09213290>
+      Details entnehmen Sie der Datenschutzerklärung von RAIDBOXES:
+      <a href="https://raidboxes.io/datenschutzerklaerung/" target="_blank" rel="noopener noreferrer" data-v-09213290>https://raidboxes.io/datenschutzerklaerung/</a>.
+    </p> <p data-v-09213290>
+      Die Verwendung von RAIDBOXES erfolgt auf Grundlage von Art. 6 Abs. 1
+      lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer
+      möglichst zuverlässigen Darstellung unserer Website. Sofern
+      eine entsprechende Einwilligung abgefragt wurde, erfolgt die
+      Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a
+      DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die
+      Speicherung von Cookies oder den Zugriff auf Informationen im
+      Endgerät des Nutzers (z. B. für Device-Fingerprinting) im
+      Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.
+    </p> <h4 data-v-09213290>Auftragsverarbeitung</h4> <p data-v-09213290>
+      Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem
+      oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen
+      datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet,
+      dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach
+      unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
+    </p> <h2 data-v-09213290>3. Allgemeine Hinweise und Pflicht­informationen</h2> <h3 data-v-09213290>Datenschutz</h3> <p data-v-09213290>
+      Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen
+      Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich
+      und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser
+      Datenschutzerklärung.
+    </p> <p data-v-09213290>
+      Wenn Sie diese Website benutzen, werden verschiedene personenbezogene
+      Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie
+      persönlich identifiziert werden können. Die vorliegende
+      Datenschutzerklärung erläutert, welche Daten wir erheben und
+      wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem
+      Zweck das geschieht.
+    </p> <p data-v-09213290>
+      Wir weisen darauf hin, dass die Datenübertragung im Internet
+      (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken
+      aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff
+      durch Dritte ist nicht möglich.
+    </p> <h3 data-v-09213290>Hinweis zur verantwortlichen Stelle</h3> <p data-v-09213290>
+      Die verantwortliche Stelle für die Datenverarbeitung auf dieser
+      Website ist:
+    </p> <p data-v-09213290>
+      FirmCatalyst GmbH & Co. KG<br data-v-09213290>
+      Schreiberhauer Straße 4<br data-v-09213290>
+      10317 Berlin
+    </p> <p data-v-09213290>
+      Telefon: +49(0) 156 785 535 92<br data-v-09213290>
+      E-Mail: support@firmcatalyst.com
+    </p> <p data-v-09213290>
+      Verantwortliche Stelle ist die natürliche oder juristische Person,
+      die allein oder gemeinsam mit anderen über die Zwecke und Mittel
+      der Verarbeitung von personenbezogenen Daten (z. B. Namen,
+      E-Mail-Adressen o. Ä.) entscheidet.
+    </p> <h3 data-v-09213290>Speicherdauer</h3> <p data-v-09213290>
+      Soweit innerhalb dieser Datenschutzerklärung keine speziellere
+      Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei
+      uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn
+      Sie ein berechtigtes Löschersuchen geltend machen oder eine
+      Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten
+      gelöscht, sofern wir keine anderen rechtlich zulässigen
+      Gründe für die Speicherung Ihrer personenbezogenen Daten haben
+      (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im
+      letztgenannten Fall erfolgt die Löschung nach Fortfall dieser
+      Gründe.
+    </p> <h3 data-v-09213290>
+      Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf
+      dieser Website
+    </h3> <p data-v-09213290>
+      Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir
+      Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a
+      DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien
+      nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer
+      ausdrücklichen Einwilligung in die Übertragung
+      personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung
+      außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie
+      in die Speicherung von Cookies oder in den Zugriff auf Informationen in
+      Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt
+      haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von
+      § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind
+      Ihre Daten zur Vertragserfüllung oder zur Durchführung
+      vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre
+      Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren
+      verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer
+      rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6
+      Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage
+      unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO
+      erfolgen. Über die jeweils im Einzelfall einschlägigen
+      Rechtsgrundlagen wird in den folgenden Absätzen dieser
+      Datenschutzerklärung informiert.
+    </p> <h3 data-v-09213290>Hinweis zur Datenweitergabe in die USA und sonstige Drittstaaten</h3> <p data-v-09213290>
+      Wir verwenden unter anderem Tools von Unternehmen mit Sitz in den USA
+      oder sonstigen datenschutzrechtlich nicht sicheren Drittstaaten. Wenn
+      diese Tools aktiv sind, können Ihre personenbezogene Daten in diese
+      Drittstaaten übertragen und dort verarbeitet werden. Wir weisen
+      darauf hin, dass in diesen Ländern kein mit der EU vergleichbares
+      Datenschutzniveau garantiert werden kann. Beispielsweise sind
+      US-Unternehmen dazu verpflichtet, personenbezogene Daten an
+      Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener
+      hiergegen gerichtlich vorgehen könnten. Es kann daher nicht
+      ausgeschlossen werden, dass US-Behörden (z. B. Geheimdienste)
+      Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken
+      verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese
+      Verarbeitungstätigkeiten keinen Einfluss.
+    </p> <h3 data-v-09213290>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3> <p data-v-09213290>
+      Viele Datenverarbeitungsvorgänge sind nur mit Ihrer
+      ausdrücklichen Einwilligung möglich. Sie können eine
+      bereits erteilte Einwilligung jederzeit widerrufen. Die
+      Rechtmäßigkeit der bis zum Widerruf erfolgten
+      Datenverarbeitung bleibt vom Widerruf unberührt.
+    </p> <h3 data-v-09213290>
+      Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen
+      sowie gegen Direktwerbung (Art. 21 DSGVO)
+    </h3> <p data-v-09213290>
+      WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F
+      DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH
+      AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER
+      PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR
+      EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE
+      RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE
+      DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN
+      WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES
+      SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE
+      FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND
+      FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER
+      GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON
+      RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
+    </p> <p data-v-09213290>
+      WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU
+      BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE
+      VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE
+      DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING,
+      SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE
+      WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT
+      MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21
+      ABS. 2 DSGVO).
+    </p> <h3 data-v-09213290>
+      Beschwerde­recht bei der zuständigen Aufsichts­behörde
+    </h3> <p data-v-09213290>
+      Im Falle von Verstößen gegen die DSGVO steht den Betroffenen
+      ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem
+      Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes
+      oder des Orts des mutmaßlichen Verstoßes zu. Das
+      Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher
+      oder gerichtlicher Rechtsbehelfe.
+    </p> <h3 data-v-09213290>Recht auf Daten­übertrag­barkeit</h3> <p data-v-09213290>
+      Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung
+      oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich
+      oder an einen Dritten in einem gängigen, maschinenlesbaren Format
+      aushändigen zu lassen. Sofern Sie die direkte Übertragung der
+      Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur,
+      soweit es technisch machbar ist.
+    </p> <h3 data-v-09213290>SSL- bzw. TLS-Verschlüsselung</h3> <p data-v-09213290>
+      Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der
+      Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen
+      oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw.
+      TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen
+      Sie daran, dass die Adresszeile des Browsers von „http://“
+      auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer
+      Browserzeile.
+    </p> <p data-v-09213290>
+      Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können
+      die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen
+      werden.
+    </p> <h3 data-v-09213290>Auskunft, Löschung und Berichtigung</h3> <p data-v-09213290>
+      Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit
+      das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
+      personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck
+      der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder
+      Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema
+      personenbezogene Daten können Sie sich jederzeit an uns wenden.
+    </p> <h3 data-v-09213290>Recht auf Einschränkung der Verarbeitung</h3> <p data-v-09213290>
+      Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer
+      personenbezogenen Daten zu verlangen. Hierzu können Sie sich
+      jederzeit an uns wenden. Das Recht auf Einschränkung der
+      Verarbeitung besteht in folgenden Fällen:
+    </p> <ul data-v-09213290><li data-v-09213290>
+        Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen
+        Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu
+        überprüfen. Für die Dauer der Prüfung haben Sie
+        das Recht, die Einschränkung der Verarbeitung Ihrer
+        personenbezogenen Daten zu verlangen.
+      </li> <li data-v-09213290>
+        Wenn die Verarbeitung Ihrer personenbezogenen Daten
+        unrechtmäßig geschah/geschieht, können Sie statt der
+        Löschung die Einschränkung der Datenverarbeitung verlangen.
+      </li> <li data-v-09213290>
+        Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie
+        sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von
+        Rechtsansprüchen benötigen, haben Sie das Recht, statt der
+        Löschung die Einschränkung der Verarbeitung Ihrer
+        personenbezogenen Daten zu verlangen.
+      </li> <li data-v-09213290>
+        Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben,
+        muss eine Abwägung zwischen Ihren und unseren Interessen
+        vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+        überwiegen, haben Sie das Recht, die Einschränkung der
+        Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+      </li></ul> <p data-v-09213290>
+      Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten
+      eingeschränkt haben, dürfen diese Daten – von ihrer
+      Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur
+      Geltendmachung, Ausübung oder Verteidigung von
+      Rechtsansprüchen oder zum Schutz der Rechte einer anderen
+      natürlichen oder juristischen Person oder aus Gründen eines
+      wichtigen öffentlichen Interesses der Europäischen Union oder
+      eines Mitgliedstaats verarbeitet werden.
+    </p> <h3 data-v-09213290>Widerspruch gegen Werbe-E-Mails</h3> <p data-v-09213290>
+      Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
+      Kontaktdaten zur Übersendung von nicht ausdrücklich
+      angeforderter Werbung und Informationsmaterialien wird hiermit
+      widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich
+      rechtliche Schritte im Falle der unverlangten Zusendung von
+      Werbeinformationen, etwa durch Spam-E-Mails, vor.
+    </p> <h2 data-v-09213290>4. Datenerfassung auf dieser Website</h2> <h3 data-v-09213290>Server-Log-Dateien</h3> <p data-v-09213290>
+      Der Provider der Seiten erhebt und speichert automatisch Informationen
+      in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns
+      übermittelt. Dies sind:
+    </p> <ul data-v-09213290><li data-v-09213290>Browsertyp und Browserversion</li> <li data-v-09213290>verwendetes Betriebssystem</li> <li data-v-09213290>Referrer URL</li> <li data-v-09213290>Hostname des zugreifenden Rechners</li> <li data-v-09213290>Uhrzeit der Serveranfrage</li> <li data-v-09213290>IP-Adresse</li></ul> <p data-v-09213290>
+      Eine Zusammenführung dieser Daten mit anderen Datenquellen wird
+      nicht vorgenommen.
+    </p> <p data-v-09213290>
+      Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit.
+      f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der
+      technisch fehlerfreien Darstellung und der Optimierung seiner Website
+      – hierzu müssen die Server-Log-Files erfasst werden.
+    </p> <h3 data-v-09213290>Kontaktformular</h3> <p data-v-09213290>
+      Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre
+      Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen
+      Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von
+      Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne
+      Ihre Einwilligung weiter.
+    </p> <p data-v-09213290>
+      Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1
+      lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags
+      zusammenhängt oder zur Durchführung vorvertraglicher
+      Maßnahmen erforderlich ist. In allen übrigen Fällen
+      beruht die Verarbeitung auf unserem berechtigten Interesse an der
+      effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1
+      lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)
+      sofern diese abgefragt wurde; die Einwilligung ist jederzeit
+      widerrufbar.
+    </p> <p data-v-09213290>
+      Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns,
+      bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur
+      Speicherung widerrufen oder der Zweck für die Datenspeicherung
+      entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer
+      Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere
+      Aufbewahrungsfristen – bleiben unberührt.
+    </p> <h3 data-v-09213290>Anfrage per E-Mail, Telefon oder Telefax</h3> <p data-v-09213290>
+      Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre
+      Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten
+      (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns
+      gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre
+      Einwilligung weiter.
+    </p> <p data-v-09213290>
+      Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1
+      lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags
+      zusammenhängt oder zur Durchführung vorvertraglicher
+      Maßnahmen erforderlich ist. In allen übrigen Fällen
+      beruht die Verarbeitung auf unserem berechtigten Interesse an der
+      effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1
+      lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)
+      sofern diese abgefragt wurde; die Einwilligung ist jederzeit
+      widerrufbar.
+    </p> <p data-v-09213290>
+      Die von Ihnen an uns per Kontaktanfragen übersandten Daten
+      verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre
+      Einwilligung zur Speicherung widerrufen oder der Zweck für die
+      Datenspeicherung entfällt (z. B. nach abgeschlossener
+      Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen –
+      insbesondere gesetzliche Aufbewahrungsfristen – bleiben
+      unberührt.
+    </p> <h3 data-v-09213290>Kommentar­funktion auf dieser Website</h3> <p data-v-09213290>
+      Für die Kommentarfunktion auf dieser Seite werden neben Ihrem
+      Kommentar auch Angaben zum Zeitpunkt der Erstellung des Kommentars, Ihre
+      E-Mail-Adresse und, wenn Sie nicht anonym posten, der von Ihnen
+      gewählte Nutzername gespeichert.
+    </p> <h4 data-v-09213290>Speicherung der IP-Adresse</h4> <p data-v-09213290>
+      Unsere Kommentarfunktion speichert die IP-Adressen der Nutzer, die
+      Kommentare verfassen. Da wir Kommentare auf dieser Website nicht vor der
+      Freischaltung prüfen, benötigen wir diese Daten, um im Falle
+      von Rechtsverletzungen wie Beleidigungen oder Propaganda gegen den
+      Verfasser vorgehen zu können.
+    </p> <h4 data-v-09213290>Abonnieren von Kommentaren</h4> <p data-v-09213290>
+      Als Nutzer der Seite können Sie nach einer Anmeldung Kommentare
+      abonnieren. Sie erhalten eine Bestätigungsemail, um zu prüfen,
+      ob Sie der Inhaber der angegebenen E-Mail-Adresse sind. Sie können
+      diese Funktion jederzeit über einen Link in den Info-Mails
+      abbestellen. Die im Rahmen des Abonnierens von Kommentaren eingegebenen
+      Daten werden in diesem Fall gelöscht; wenn Sie diese Daten für
+      andere Zwecke und an anderer Stelle (z. B. Newsletterbestellung) an
+      uns übermittelt haben, verbleiben diese Daten jedoch bei uns.
+    </p> <h4 data-v-09213290>Speicherdauer der Kommentare</h4> <p data-v-09213290>
+      Die Kommentare und die damit verbundenen Daten werden gespeichert und
+      verbleiben auf dieser Website, bis der kommentierte Inhalt
+      vollständig gelöscht wurde oder die Kommentare aus rechtlichen
+      Gründen gelöscht werden müssen (z. B. beleidigende
+      Kommentare).
+    </p> <h4 data-v-09213290>Rechtsgrundlage</h4> <p data-v-09213290>
+      Die Speicherung der Kommentare erfolgt auf Grundlage Ihrer Einwilligung
+      (Art. 6 Abs. 1 lit. a DSGVO). Sie können eine von Ihnen erteilte
+      Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung
+      per E-Mail an uns. Die Rechtmäßigkeit der bereits erfolgten
+      Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
+    </p> <h2 data-v-09213290>5. Newsletter</h2> <h3 data-v-09213290>Newsletter­daten</h3> <p data-v-09213290>
+      Wenn Sie den auf der Website angebotenen Newsletter beziehen
+      möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie
+      Informationen, welche uns die Überprüfung gestatten, dass Sie
+      der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des
+      Newsletters einverstanden sind. Weitere Daten werden nicht bzw. nur auf
+      freiwilliger Basis erhoben. Diese Daten verwenden wir
+      ausschließlich für den Versand der angeforderten
+      Informationen und geben diese nicht an Dritte weiter.
+    </p> <p data-v-09213290>
+      Die Verarbeitung der in das Newsletteranmeldeformular eingegebenen Daten
+      erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6
+      Abs. 1 lit. a DSGVO). Die erteilte Einwilligung zur Speicherung der
+      Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des
+      Newsletters können Sie jederzeit widerrufen, etwa über den
+      „Austragen“-Link im Newsletter. Die
+      Rechtmäßigkeit der bereits erfolgten
+      Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
+    </p> <p data-v-09213290>
+      Die von Ihnen zum Zwecke des Newsletter-Bezugs bei uns hinterlegten
+      Daten werden von uns bis zu Ihrer Austragung aus dem Newsletter bei uns
+      bzw. dem Newsletterdiensteanbieter gespeichert und nach der Abbestellung
+      des Newsletters oder nach Zweckfortfall aus der Newsletterverteilerliste
+      gelöscht. Wir behalten uns vor, E-Mail-Adressen aus unserem
+      Newsletterverteiler nach eigenem Ermessen im Rahmen unseres berechtigten
+      Interesses nach Art. 6 Abs. 1 lit. f DSGVO zu löschen oder zu
+      sperren.
+    </p> <p data-v-09213290>
+      Daten, die zu anderen Zwecken bei uns gespeichert wurden, bleiben
+      hiervon unberührt.
+    </p> <p data-v-09213290>
+      Nach Ihrer Austragung aus der Newsletterverteilerliste wird Ihre
+      E-Mail-Adresse bei uns bzw. dem Newsletterdiensteanbieter ggf. in einer
+      Blacklist gespeichert, sofern dies zur Verhinderung künftiger
+      Mailings erforderlich ist. Die Daten aus der Blacklist werden nur
+      für diesen Zweck verwendet und nicht mit anderen Daten
+      zusammengeführt. Dies dient sowohl Ihrem Interesse als auch unserem
+      Interesse an der Einhaltung der gesetzlichen Vorgaben beim Versand von
+      Newslettern (berechtigtes Interesse im Sinne des Art. 6 Abs. 1 lit. f
+      DSGVO). Die Speicherung in der Blacklist ist zeitlich nicht befristet.
+      <strong data-v-09213290>Sie können der Speicherung widersprechen, sofern Ihre Interessen
+        unser berechtigtes Interesse überwiegen.</strong></p> <h2 data-v-09213290>6. Plugins und Tools</h2> <h3 data-v-09213290>YouTube</h3> <p data-v-09213290>
+      Diese Website bindet Videos der Website YouTube ein. Betreiber der
+      Website ist die Google Ireland Limited („Google“), Gordon
+      House, Barrow Street, Dublin 4, Irland.
+    </p> <p data-v-09213290>
+      Wenn Sie eine unserer Webseiten besuchen, auf denen YouTube eingebunden
+      ist, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei
+      wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht
+      haben.
+    </p> <p data-v-09213290>
+      Des Weiteren kann YouTube verschiedene Cookies auf Ihrem Endgerät
+      speichern oder vergleichbare Technologien zur Wiedererkennung verwenden
+      (z. B. Device-Fingerprinting). Auf diese Weise kann YouTube
+      Informationen über Besucher dieser Website erhalten. Diese
+      Informationen werden u. a. verwendet, um Videostatistiken zu
+      erfassen, die Anwenderfreundlichkeit zu verbessern und Betrugsversuchen
+      vorzubeugen.
+    </p> <p data-v-09213290>
+      Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie
+      YouTube, Ihr Surfverhalten direkt Ihrem persönlichen Profil
+      zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem
+      YouTube-Account ausloggen.
+    </p> <p data-v-09213290>
+      Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden
+      Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes
+      Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine
+      entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung
+      ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und
+      § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von
+      Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers
+      (z. B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
+      Einwilligung ist jederzeit widerrufbar.
+    </p> <p data-v-09213290>
+      Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der
+      Datenschutzerklärung von YouTube unter:
+      <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" data-v-09213290>https://policies.google.com/privacy?hl=de</a>.
+    </p> <h3 data-v-09213290>Google Web Fonts</h3> <p data-v-09213290>
+      Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so
+      genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf
+      einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren
+      Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
+    </p> <p data-v-09213290>
+      Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den
+      Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis
+      darüber, dass über Ihre IP-Adresse diese Website aufgerufen
+      wurde. Die Nutzung von Google WebFonts erfolgt auf Grundlage von Art. 6
+      Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse
+      an der einheitlichen Darstellung des Schriftbildes auf seiner Website.
+      Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die
+      Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a
+      DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die
+      Speicherung von Cookies oder den Zugriff auf Informationen im
+      Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne
+      des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.
+    </p> <p data-v-09213290>
+      Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine
+      Standardschrift von Ihrem Computer genutzt.
+    </p> <p data-v-09213290>
+      Weitere Informationen zu Google Web Fonts finden Sie unter
+      <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer" data-v-09213290>https://developers.google.com/fonts/faq</a>
+      und in der Datenschutzerklärung von Google:
+      <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" data-v-09213290>https://policies.google.com/privacy?hl=de</a>.
+    </p></div> <div class="footer-block" data-v-09213290><div class="text" data-v-09213290><div class="footer" data-v-cd3b42f6 data-v-09213290><ul class="uppercase" data-v-cd3b42f6><li name="Blog" class="link" data-v-cd3b42f6><a href="/blog" data-v-cd3b42f6>Blog</a></li> <li name="Kontakt" class="link" data-v-cd3b42f6><a href="/kontakt" data-v-cd3b42f6>Kontakt</a></li> <li name="Impressum" class="link" data-v-cd3b42f6><a href="/impressum" data-v-cd3b42f6>Impressum</a></li> <li name="Datenschutz" class="link" data-v-cd3b42f6><a href="/datenschutz" aria-current="page" class="nuxt-link-exact-active nuxt-link-active" data-v-cd3b42f6>Datenschutz</a></li></ul> <p class="copyright" data-v-cd3b42f6>Copyright 2022</p></div></div></div></div></div></div></div><script defer src="/_nuxt/static/1775500892/datenschutz/state.js"></script><script src="/_nuxt/3a0c46c.js" defer></script><script src="/_nuxt/39fb428.js" defer></script><script src="/_nuxt/96f5207.js" defer></script><script src="/_nuxt/751f137.js" defer></script><script src="/_nuxt/5fe96f4.js" defer></script>
+  </body>
+</html>
