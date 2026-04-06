@@ -98,17 +98,9 @@
           loading="lazy"
           width="1024"
           height="768"
-          src="https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L-1024x768.jpg"
+          src="/assets/images/blog/Depositphotos_445936138_L-1024x768.jpg"
           alt="Lager mit vielen Amazon Paketen"
           class="wp-image-91"
-          srcset="
-            https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L-1024x768.jpg  1024w,
-            https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L-300x225.jpg    300w,
-            https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L-768x576.jpg    768w,
-            https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L-1536x1152.jpg 1536w,
-            https://content.gittr.com/wp-content/uploads/2023/01/Depositphotos_445936138_L.jpg           1707w
-          "
-          sizes="(max-width: 1024px) 100vw, 1024px"
         />
       </figure>
 

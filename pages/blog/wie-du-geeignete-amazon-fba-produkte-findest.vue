@@ -87,15 +87,9 @@
           loading="lazy"
           width="999"
           height="667"
-          src="https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_175999666_S.jpg"
+          src="/assets/images/blog/Depositphotos_175999666_S.jpg"
           alt="Eine Frau sitz auf einem Teppich mit einem Laptop auf dem Schoß"
           class="wp-image-68"
-          srcset="
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_175999666_S.jpg         999w,
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_175999666_S-300x200.jpg 300w,
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_175999666_S-768x513.jpg 768w
-          "
-          sizes="(max-width: 999px) 100vw, 999px"
         />
       </figure>
 

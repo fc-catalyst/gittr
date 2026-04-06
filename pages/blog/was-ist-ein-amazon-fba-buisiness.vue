@@ -52,15 +52,9 @@
           loading="lazy"
           width="999"
           height="667"
-          src="https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_208504732_S-1.jpg"
+          src="/assets/images/blog/Depositphotos_208504732_S-1.jpg"
           alt="Mann sucht Produkte auf Amazon"
           class="wp-image-60"
-          srcset="
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_208504732_S-1.jpg         999w,
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_208504732_S-1-300x200.jpg 300w,
-            https://content.gittr.com/wp-content/uploads/2022/11/Depositphotos_208504732_S-1-768x513.jpg 768w
-          "
-          sizes="(max-width: 999px) 100vw, 999px"
         />
       </figure>
 

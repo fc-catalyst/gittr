@@ -41,17 +41,9 @@
           loading="lazy"
           width="1024"
           height="684"
-          src="https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L-1024x684.jpg"
+          src="/assets/images/blog/Depositphotos_298077350_L-1024x684.jpg"
           alt="Schreibtisch mit Laptop und Notizblock"
           class="wp-image-80"
-          srcset="
-            https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L-1024x684.jpg  1024w,
-            https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L-300x200.jpg    300w,
-            https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L-768x513.jpg    768w,
-            https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L-1536x1025.jpg 1536w,
-            https://content.gittr.com/wp-content/uploads/2022/12/Depositphotos_298077350_L.jpg           1918w
-          "
-          sizes="(max-width: 1024px) 100vw, 1024px"
         />
       </figure>
 
