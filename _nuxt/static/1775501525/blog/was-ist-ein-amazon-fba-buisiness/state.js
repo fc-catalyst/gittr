@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fgittr\u002F_nuxt\u002Fstatic\u002F1775501525",layout:"default",error:a,state:{posts:[],categories:[],result:{}},serverRendered:true,routePath:"\u002Fblog\u002Fwas-ist-ein-amazon-fba-buisiness",config:{_app:{basePath:"\u002Fgittr\u002F",assetsPath:"\u002Fgittr\u002F_nuxt\u002F",cdnURL:a}}}}(null));
